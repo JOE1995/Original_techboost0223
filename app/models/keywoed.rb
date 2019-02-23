@@ -1,0 +1,2 @@
+class Keywoed < ApplicationRecord
+end

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  keyword_id: 1
+  search_date: 2019-02-23
+  rank: MyString
+
+two:
+  keyword_id: 1
+  search_date: 2019-02-23
+  rank: MyString
