@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+
+  def show_test
+  end
+
   def login_form
   end
 
@@ -6,7 +10,10 @@ class UsersController < ApplicationController
 
     # user_idからshopを取得
     @shop = Shop.find_by(user_id: @current_user.id)
+    # @shops = Shop.where(user_id: @current_user.id)
+    # @shop = @shops[1]
     puts @shop.shopname
+    puts Date.today
 
     # shop_idからkeywordsを全て取得
     @keywords = Keywoed.where(shop_id: @shop.id)
@@ -31,7 +38,7 @@ class UsersController < ApplicationController
         end
       end
 
-      now = Date.current
+      now = Date.today
       puts now
       @search_result = Search_result.find_by(keyword_id: keyword.id, search_date: now)
 
